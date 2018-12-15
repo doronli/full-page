@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>web site</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage fixed full-screen backgrounds." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="/css/circle.css" />
+    
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+
+
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>fullPage.js</h1>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <h1>Slide Backgrounds</h1>
+            </div>
+            <div class="slide" id="slide2">
+                <h1>Totally customizable</h1>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <h1>Lovely images <br />for a lovely page</h1>
+        </div>
+        <div class="section" id="section3">
+            <h1>One Image = One thousand words</h1>
+        </div>
+    </div>
+    <div id="fp-nav" class="fp-right" style="margin-top: -73.5px;">
+        <ul>
+            <li><a href="section0" class="active" role="link"><span class=""></span></a></li>
+            <li><a href="section1" role="link"><span></span></a></li>
+            <li><a href="section2" role="link"><span></span></a></li>
+            <li><a href="section3" role="link"><span></span></a></li>
+        </ul>
+    </div>
+
+    <!-- <script type="text/javascript" src="../dist/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="/js/fullpage.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            licenseKey: 'CBD93AF1-6BFA4B46-A7CC01C3-2B905854',
+            showActiveTooltip: true,
+            verticalCentered: false,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            css3: false
+        });
+        fullpage_api.setAllowScrolling(false);
+       
+
+
+    </script>
+</body>
+
+</html>
